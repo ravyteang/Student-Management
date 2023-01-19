@@ -1,8 +1,8 @@
 #!/bin/bash
-apt-get update
-apt install apache2
-systemctl start apache2
-systemctl enable apache2
+sudo apt-get update
+sudo apt install apache2
+sudo systemctl start apache2
+sudo systemctl enable apache2
 echo "Hello world from me!!" /var/www/html/index.html
-systemctl restart apache2
+sudo systemctl restart apache2
 
